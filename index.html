@@ -11,7 +11,7 @@
     <div class="container">
         <div class="header">
             <span>Usuários cadastrados</span>
-            <button onclick="open_modal()" id="new">Incluir</button>
+            <button onclick="openModal()" id="new">Incluir</button>
         </div>
         <div class="table">
             <table>
@@ -20,6 +20,7 @@
                         <th>Nome</th>
                         <th>Cidade</th>
                         <th>Estado</th>
+                        <th>Telefone</th>
                         <th>Nacionalidade</th>
                         <th>Profissão</th>
                         <th class="ação">Editar</th>
@@ -29,9 +30,31 @@
                 <tbody>
                 </tbody>
             </table>
-            
         </div>
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome">
 
+                    <label for="icidade">Cidade: </label>
+                    <input type="text" name="cidade" id="icidade">
+
+                    <label for="iestado">Estado: </label>
+                    <input type="text" name="estado" id="iestado">
+
+                    <label for="itelfone">Telefone: </label>
+                    <input type="number" name="telefone" id="itelefone">
+
+                    <label for="inacionalidade">Nacionalidade: </label>
+                    <input type="text" name="nacionalidade" id="inacionalidade">
+
+                    <label for="iprofissao">Profissão: </label>
+                    <input type="text" name="profissao" id="iprofissao">
+                    <button id="btn-salvar">Salvar</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="index.js"></script>
